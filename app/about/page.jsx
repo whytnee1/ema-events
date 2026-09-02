@@ -100,7 +100,7 @@ export default function AboutPage() {
                 E
               </span>
 
-              MA is a platform committed to becoming a global leader in the
+              MA (Evidence Modelling Agency) is a platform committed to becoming a global leader in the
               modelling industry. We train and support the next generation
               of talent through skills development, professional training,
               seminars, and mentorship.
