@@ -65,7 +65,7 @@ export default function Home() {
             </div>
 
             <h3 className="font-['Cinzel'] text-2xl sm:text-3xl font-extrabold text-[#FAF9F6] mb-3 tracking-wide">
-              <span className="font-bold text-6xl text-[#C94C5A]">E</span>ma Queen Nigeria 6.0 Loading...
+              <span className="font-bold text-6xl text-[#C94C5A]">E</span>MA Queen Nigeria 6.0 Loading...
             </h3>
 
             <p className="text-gray-300 text-sm sm:text-base font-light tracking-wide mb-6">
@@ -92,7 +92,7 @@ export default function Home() {
         {/* Background Image (Usher.jpg) with dark overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/Usher.jpg"
+            src="/model8.jpg"
             alt="EMA Global Modeling Hero"
             className="w-full h-full object-cover scale-105 filter brightness-[0.65] contrast-125"
           />
@@ -180,7 +180,7 @@ export default function Home() {
             <div className="absolute -inset-1 sm:-inset-2 rounded-3xl bg-gradient-to-r from-[#D4AF37]/30 to-[#FF3366]/30 filter blur-xl opacity-50"></div>
             <div className="relative rounded-2xl overflow-hidden border border-[#D4AF37]/40 bg-[#161616] aspect-[4/5]">
               <img 
-                src="/Usher2.jpg" 
+                src="/model9.jpg" 
                 alt="EMA Agency Atmosphere" 
                 className="w-full h-full object-cover filter brightness-90 hover:scale-105 transition-transform duration-700"
               />
@@ -246,8 +246,8 @@ export default function Home() {
 
       {/* FINAL JOIN CTA BANNER */}
       <section className="py-16 sm:py-28 px-4 sm:px-6 bg-[#161616] border-t border-[#D4AF37]/20 relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10">
-          <img src="/Usher.jpg" alt="Background" className="w-full h-full object-cover filter grayscale" />
+        <div className="absolute inset-0 z-0 opacity-15">
+          <img src="/model7.jpg" alt="Background" className="w-full h-full object-cover filter grayscale" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.25em] text-[#FF3366] block mb-3">Begin Your Journey</span>
