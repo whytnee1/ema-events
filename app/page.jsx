@@ -113,9 +113,9 @@ export default function Home() {
 
           {/* Main Headline */}
           <h1 className="font-['Cinzel'] text-3xl xs:text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-[#FAF9F6] mb-4 sm:mb-6 leading-[1.15] sm:leading-[1.1]">
-            REDEFINING <br className="hidden xs:inline" />
+        CREATING THE  <br className="hidden xs:inline" />
             <span className="bg-gradient-to-r from-white via-[#FAF9F6] to-[#D4AF37] bg-clip-text text-transparent">
-              GLOBAL ELEGANCE
+              BEST DAY EVER
             </span>
           </h1>
 

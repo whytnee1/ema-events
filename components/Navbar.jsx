@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useState } from "react";
 import Link from "next/link";
 import { 
@@ -13,14 +12,16 @@ export default function Navbar() {
 
   const navItems = [
     { name: 'HOME', href: '/' },
-    { name: 'MODELS', href: '/models' },
-    { name: 'SERVICES', href: '/services' },
-    { name: 'ABOUT', href: '/about' },
-    { name: 'CONTACT', href: '/contact' },
+    { name: 'PAGEANTRY/MODELS', href: '/models' },
+    { name: 'EVENTS', href: '/event' },
+    { name: 'USHERING', href: '/usher' },
+    { name: 'OUR SERVICES', href: '/services' },
+    { name: 'ABOUT EMA', href: '/about' },
+    { name: 'CONTACT/BOOKINGS', href: '/contact' },
   ];
 
   return (
-    <header className="fixed top-5 left-0 w-full z-50 bg-[#FAF9F6]/80 rounded-full backdrop-blur-md border-b border-[#D4AF37]/30 transition-all duration-300 shadow-sm">
+    <header className="fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 bg-[#FAF9F6]/85 rounded-full backdrop-blur-md border border-[#D4AF37]/30 transition-all duration-300 shadow-md">
       <style jsx>{`
         @keyframes waveHover {
           0% { transform: translateY(0px) rotate(0deg); }
@@ -52,30 +53,36 @@ export default function Navbar() {
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 h-20 flex items-center justify-between">
+      <div className="w-full mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-2">
         
-        {/* EXTREME LEFT: Logo & Brand Name (Borderless) */}
-        <Link href="/" className="flex items-center gap-2 group pl-2 sm:pl-0 shrink-0 border-0 outline-none focus:outline-none">
-          <div className="relative w-24 sm:w-36 lg:w-40 h-14 sm:h-18 flex items-center justify-center overflow-hidden border-0 bg-transparent">
+        {/* EXTREME LEFT: Logo & Brand Name */}
+        <Link href="/" className="flex items-center gap-1.5 sm:gap-2 group shrink-0 border-0 outline-none focus:outline-none">
+          <div className="relative w-20 sm:w-28 md:w-32 lg:w-36 h-10 sm:h-14 flex items-center justify-center overflow-hidden border-0 bg-transparent">
             <img 
               src="/EmaLogo.png" 
               alt="Events Management Logo" 
               className="w-full h-full object-contain border-0 transform group-hover:scale-110 transition-transform duration-500" 
             />
           </div>
-          <span className="text-xl sm:text-2xl text-[#222222]/30 hidden md:inline">|</span>
-          <span className="font-['Cinzel'] text-xs sm:text-sm lg:text-base font-bold tracking-tight lg:tracking-wider bg-gradient-to-r from-[#222222] via-[#FF3366] to-[#D4AF37] bg-clip-text text-transparent group-hover:opacity-90 transition-opacity whitespace-nowrap border-0">
-            Events Management
-          </span>
+          <span className="text-xl sm:text-2xl text-[#222222]/35 hidden md:inline">|</span>
+          <div className="flex flex-col border-0">
+            <span className="font-['Cinzel'] text-[11px] sm:text-xs md:text-sm font-bold tracking-tight lg:tracking-wider bg-gradient-to-r from-[#222222] via-[#FF3366] to-[#D4AF37] bg-clip-text text-transparent group-hover:opacity-90 transition-opacity whitespace-nowrap border-0">
+              Events Management
+            </span>
+            
+            <span className="text-[8px] sm:text-[9px] tracking-widest text-[#7A5C00] font-semibold uppercase whitespace-nowrap mt-[-0.5px]">
+             
+            </span>
+          </div>
         </Link>
 
-        {/* CENTER: Wavy Water-Like Navigation Menu (Desktop & Laptop 1024px friendly) */}
-        <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2 bg-[#222222]/5 p-1.5 rounded-full border border-[#D4AF37]/30 shadow-inner backdrop-blur-sm shrink-0">
+        {/* CENTER: Wavy Navigation Menu */}
+        <nav className="hidden xl:flex items-center space-x-0.5 2xl:space-x-1.5 bg-[#222222]/5 p-1.5 rounded-full border border-[#D4AF37]/30 shadow-inner backdrop-blur-sm shrink-0">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="relative px-3.5 xl:px-5 py-2.5 rounded-full text-[11px] xl:text-xs font-bold tracking-widest uppercase text-[#222222] transition-all duration-300 ease-out overflow-hidden group hover:text-[#C94C5A] hover:bg-[#5A0000]/10 hover:shadow-[0_0_20px_rgba(201,76,90,0.2)] border border-transparent hover:border-[#C94C5A]/40 whitespace-nowrap"
+              className="relative px-2.5 2xl:px-4 py-2 rounded-full text-[10px] 2xl:text-xs font-bold tracking-wider uppercase text-[#222222] transition-all duration-300 ease-out overflow-hidden group hover:text-[#C94C5A] hover:bg-[#5A0000]/10 hover:shadow-[0_0_20px_rgba(201,76,90,0.2)] border border-transparent hover:border-[#C94C5A]/40 whitespace-nowrap"
             >
               <span className="wave-text relative z-10 inline-block">
                 {item.name.split("").map((char, index) => (
@@ -89,21 +96,20 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* EXTREME RIGHT: JOIN EMA CTA & Mobile Hamburger Toggle */}
-        <div className="flex items-center gap-3 pr-2 sm:pr-0 shrink-0">
+        {/* EXTREME RIGHT: JOIN EMA CTA & Hamburger Toggle */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <Link
             href="/join"
-            className="group relative hidden lg:inline-flex items-center gap-2 bg-[#5A0000] text-white px-5 xl:px-7 py-3 text-[11px] xl:text-xs uppercase tracking-widest font-bold overflow-hidden rounded-full border border-[#D4AF37]/50 shadow-[0_4px_20px_rgba(90,0,0,0.3)] transition-all duration-300 hover:shadow-[0_6px_25px_rgba(90,0,0,0.5)] hover:bg-[#450000] whitespace-nowrap"
+            className="group relative hidden xl:inline-flex items-center gap-2 bg-[#5A0000] text-white px-5 2xl:px-6 py-2.5 text-xs uppercase tracking-widest font-bold overflow-hidden rounded-full border border-[#D4AF37]/50 shadow-[0_4px_20px_rgba(90,0,0,0.3)] transition-all duration-300 hover:shadow-[0_6px_25px_rgba(90,0,0,0.5)] hover:bg-[#450000] whitespace-nowrap"
           >
             <span className="absolute inset-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span> 
             <FiUserPlus className="text-sm text-[#D4AF37] group-hover:text-white transition-colors duration-300" />
             <span className="relative z-10">JOIN EMA</span>
           </Link>
 
-          {/* Mobile & 1024px Laptop Hamburger Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden flex items-center justify-center w-10 h-10 rounded-full bg-[#222222]/5 border border-[#D4AF37]/30 text-[#222222] hover:text-[#C94C5A] hover:border-[#C94C5A] focus:outline-none text-2xl transition-all shadow-sm"
+            className="xl:hidden flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#222222]/5 border border-[#D4AF37]/30 text-[#222222] hover:text-[#C94C5A] hover:border-[#C94C5A] focus:outline-none text-xl sm:text-2xl transition-all shadow-sm"
             aria-label="Toggle Navigation Menu"
           >
             {isOpen ? <FiX className="transform rotate-90 transition-transform duration-300" /> : <FiMenu className="transform rotate-0 transition-transform duration-300" />}
@@ -112,15 +118,15 @@ export default function Navbar() {
 
       </div>
 
-      {/* Animated Mobile / Laptop Dropdown Menu */}
+      {/* Animated Dropdown Menu for Mobile and Laptops */}
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-[#FAF9F6]/95 border-b border-[#D4AF37]/40 px-6 py-6 space-y-3 backdrop-blur-2xl shadow-2xl mobile-dropdown-anim rounded-b-3xl">
+        <div className="xl:hidden absolute top-full left-0 w-full bg-[#FAF9F6]/95 border-b border-[#D4AF37]/40 px-6 py-6 space-y-3 backdrop-blur-2xl shadow-2xl mobile-dropdown-anim rounded-b-3xl max-h-[80vh] overflow-y-auto">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="block text-sm font-bold tracking-widest uppercase text-[#222222] hover:text-[#C94C5A] transition-all py-3 border-b border-black/5 group"
+              className="block text-xs sm:text-sm font-bold tracking-widest uppercase text-[#222222] hover:text-[#C94C5A] transition-all py-3 border-b border-black/5 group"
             >
               <span className="wave-text inline-block">
                 {item.name.split("").map((char, index) => (

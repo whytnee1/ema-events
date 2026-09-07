@@ -16,10 +16,6 @@ export default function ModelsPage() {
       image: "/model2.jpg"
     },
     {
-      description: "Effortless poise and contemporary grace that bridges modern commercial appeal with sophisticated luxury standards.",
-      image: "/model3.jpg"
-    },
-    {
       description: "A bold and confident look that speaks through strong style and personality. Her powerful presence brings energy and character to every frame.",
       image: "/model4.jpg"
     },
@@ -32,17 +28,93 @@ export default function ModelsPage() {
       image: "/model6.jpg"
     },
     {
-        description: "Where beauty meets confidence. A captivating group of exceptional models.",
-        image: "/model7.jpg"
+      description: "Where beauty meets confidence. A captivating group of exceptional models.",
+      image: "/model7.jpg"
     },
-     {
-     description: "More than just beautiful faces; a powerful representation of elegance, confidence and style.",
-     image: "/model8.jpg"
- },
-  {
-     description: "A breathtaking collection of beauty, elegance and undeniable charisma.",
-     image: "/brandA.jpg"
- },
+    {
+      description: "More than just beautiful faces; a powerful representation of elegance, confidence and style.",
+      image: "/model8.jpg"
+    },
+    {
+      description: "A breathtaking collection of beauty, elegance and undeniable charisma.",
+      image: "/brandA.jpg"
+    },
+    {
+      description: "Dynamic stage command and striking facial symmetry designed to capture the ultimate avant-garde aesthetic.",
+      image: "/model9.jpg"
+    },
+    {
+      description: "An intoxicating blend of poise and contemporary allure, setting a new benchmark for high-fashion runway showcases.",
+      image: "/model10.jpg"
+    },
+    {
+      description: "Raw energy translated into absolute elegance, showcasing fluid movement and an unforgettable visual cadence.",
+      image: "/model11.jpg"
+    },
+    {
+      description: "Sleek lines and a piercing gaze that command attention, perfect for luxury designer portfolios and campaigns.",
+      image: "/model12.jpg"
+    },
+    {
+      description: "Exquisite posture and timeless charm, embodying the true spirit of haute couture grace.",
+      image: "/model13.jpg"
+    },
+    {
+      description: "Fearless styling and an edgy disposition that brings unmatched character to modern streetwear and editorial spreads.",
+      image: "/model14.jpg"
+    },
+    {
+      description: "A harmonious balance of delicate features and fierce inner strength, creating arresting visual narratives.",
+      image: "/model15.jpg"
+    },
+    {
+      description: "Captivating symmetry paired with an effortless stride that breathes life into every designer garment.",
+      image: "/model16.jpg"
+    },
+    {
+      description: "An electric screen presence defined by high-voltage charisma and an instinctive understanding of fashion geometry.",
+      image: "/model17.jpg"
+    },
+    {
+      description: "Subtle sophistication meets magnetic allure, crafting frames that linger long in the viewer's memory.",
+      image: "/model18.jpg"
+    },
+    {
+      description: "Striking silhouettes and bold expressions that redefine the boundaries of contemporary modelling art.",
+      image: "/model19.jpg"
+    },
+    {
+      description: "Immaculate poise and versatile styling capacity, transitioning seamlessly from classic elegance to modern chic.",
+      image: "/model20.jpg"
+    },
+    {
+      description: "An unmistakable aura of luxury, characterized by statuesque height and a mesmerizing runway walk.",
+      image: "/model21.jpg"
+    },
+    {
+      description: "Artistic depth and expressive features that tell a complete story with a single, unyielding glance.",
+      image: "/model22.jpg"
+    },
+    {
+      description: "Radiant warmth blended with high-fashion edge, creating a universally engaging commercial appeal.",
+      image: "/model23.jpg"
+    },
+    {
+      description: "Unrivaled confidence and sharp contours that define the pinnacle of modern editorial excellence.",
+      image: "/model24.jpg"
+    },
+    {
+      description: "Fluid grace and striking proportions that elevate seasonal collections into masterpieces of visual art.",
+      image: "/model25.jpg"
+    },
+    {
+      description: "A mesmerizing convergence of classic beauty and forward-thinking fashion sensibilities.",
+      image: "/model26.jpg"
+    },
+    {
+      description: "The ultimate embodiment of grace, power, and prestige on the grand global runway stage.",
+      image: "/model27.jpg"
+    }
   ];
 
   return (
