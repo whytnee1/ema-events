@@ -16,6 +16,7 @@ export default function Navbar() {
     { name: 'EVENTS', href: '/event' },
     { name: 'USHERING', href: '/usher' },
     { name: 'OUR SERVICES', href: '/services' },
+    { name: 'VOTE POLE', href: '/vote' },
     { name: 'ABOUT EMA', href: '/about' },
     { name: 'CONTACT/BOOKINGS', href: '/contact' },
   ];
