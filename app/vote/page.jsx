@@ -66,8 +66,8 @@ const INITIAL_CONTESTANTS = [
   },
   {
     id: "contestant_6",
-    name: "Eseosa Igbinovia",
-    state: "Edo State",
+    name: "Princess Okoro",
+    state: "EMA Abia",
     image: "/contestant6.jpg",
     votes: 0,
   },
@@ -94,8 +94,8 @@ const INITIAL_CONTESTANTS = [
   },
   {
     id: "contestant_10",
-    name: "Zainab Abubakar",
-    state: "FCT Abuja",
+    name: "Lucky Elozino Natasha",
+    state: "EMA Delta",
     image: "/contestant10.jpg",
     votes: 0,
   },
